@@ -1,3 +1,4 @@
+
 function callAfter(i){
 
 	setTimeout(function() {
@@ -7,6 +8,7 @@ function callAfter(i){
 	}, i * 1000);
 	
 }
+
 function print(){
 	for(var i = 0; i < 3; i++){
 		callAfter(i)
