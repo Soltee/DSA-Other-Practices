@@ -9,7 +9,7 @@ function binarySearch(arr, target)
 		console.log(arr[leftIndex], arr[rightIndex])
 
 		let middleIndex = Math.floor((leftIndex + rightIndex) / 2);
-		// console.log(middleIndex)
+
 		if(target === arr[middleIndex]) return middleIndex;
 
 		if(target < arr[middleIndex])
@@ -39,7 +39,7 @@ function binarySearch(arr, target)
 }
 
 console.log(binarySearch([-5, 2, 4, 6, 10], 10), "\n") // 4
-// console.log(binarySearch([-5, 2, 4, 6, 10], 6), "\n") // 3
-// console.log(binarySearch([-5, 2, 4, 6, 10], 20), "\n") // -1
+console.log(binarySearch([-5, 2, 4, 6, 10], 6), "\n") // 3
+console.log(binarySearch([-5, 2, 4, 6, 10], 20), "\n") // -1
 
 // Big-O = O(logn) - logarithimic
